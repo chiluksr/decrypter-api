@@ -1,0 +1,36 @@
+openapi: 3.0.1
+info:
+  title: Crack Station
+  description: This API Decrypts a 3 character encrypted String(SHA1 or SHA2) and returns a plain text password
+  version: 1.0.0
+servers:
+  - url: https://sxmnfudedf.execute-api.us-east-1.amazonaws.com/test1/
+tags:
+  - name: password
+    description: This is a hashed password (encrpted password) that is sent along with the request as a path parameter which needs to be decrypted
+paths:
+  /{password}:
+    get:
+      tags:
+        - password
+      description: Returns the cracked password
+      parameters:
+        - name: password
+          in: path
+          description: password to crack
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                type: object
+               
+              examples:
+                '0':
+                  value: '{"482bd64c6c9f098c9ef8b77b8f870517bf33a1b9": "ch"}'
+    servers:
+      - url: https://sxmnfudedf.execute-api.us-east-1.amazonaws.com/test1/

@@ -11,8 +11,8 @@ def lambda_handler(event, context):
         print("Count",count)
         if count == 0: 
           statusCode=404
-          password="nil"
-          return {'statusCode': statusCode,'body': password}
+          password=""
+          return {'statusCode': statusCode}
         else:
           password = resp['Items'][0]
           hash =password['key']
