@@ -4,7 +4,7 @@ info:
   description: This API Decrypts a 3 character encrypted String(SHA1 or SHA2) and returns a plain text password
   version: 1.0.0
 servers:
-  - url: https://sxmnfudedf.execute-api.us-east-1.amazonaws.com/test1/
+  - url: https://xsm7raw29g.execute-api.us-east-1.amazonaws.com/test1/
 tags:
   - name: password
     description: This is a hashed password (encrpted password) that is sent along with the request as a path parameter which needs to be decrypted
@@ -31,6 +31,6 @@ paths:
                
               examples:
                 '0':
-                  value: '{"482bd64c6c9f098c9ef8b77b8f870517bf33a1b9": "ch"}'
+                  value: '{"df211ccdd94a63e0bcb9e6ae427a249484a49d60": "as"}'
     servers:
-      - url: https://sxmnfudedf.execute-api.us-east-1.amazonaws.com/test1/
+      - url: https://xsm7raw29g.execute-api.us-east-1.amazonaws.com/test1/
